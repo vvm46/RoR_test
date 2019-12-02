@@ -1,0 +1,472 @@
+html {
+    -webkit-text-size-adjust: 100%
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: #ec004a;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden
+}
+
+.icon {
+    width: 25px;
+    height: 25px
+}
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+body {
+    margin: 0
+}
+
+article, aside, footer, header, nav, section {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0
+}
+
+figcaption, figure, main {
+    display: block
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:active, a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: inherit;
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button, input, optgroup, select, textarea {
+    font-family: Proxima Nova;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details, menu {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+canvas {
+    display: inline-block
+}
+
+[hidden], template {
+    display: none
+}
+
+.a-icon {
+    width: 25px;
+    height: 25px;
+    box-sizing: content-box;
+    fill: currentColor;
+    color: #fff
+}
+
+.a-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #ec004a;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px
+}
+
+.a-checkbox {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.a-checkbox__input {
+    position: absolute;
+    opacity: 0
+}
+
+.a-checkbox__input:hover ~ .a-checkbox__label:before {
+    background: #f35429
+}
+
+.a-checkbox__input:focus ~ .a-checkbox__label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, .12)
+}
+
+.a-checkbox__input:checked ~ .a-checkbox__label:before {
+    background: #f35429
+}
+
+.a-checkbox__input:checked ~ .a-checkbox__label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: #fff;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 #fff, 4px 0 0 #fff, 4px -2px 0 #fff, 4px -4px 0 #fff, 4px -6px 0 #fff, 4px -8px 0 #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.a-checkbox__input:disabled ~ .a-checkbox__label:before {
+    box-shadow: none;
+    background: #ddd
+}
+
+.a-checkbox__input:disabled ~ .a-checkbox__label {
+    color: #b8b8b8;
+    cursor: default
+}
+
+.a-checkbox__label {
+    position: relative;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0
+}
+
+.a-checkbox__label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: #fff
+}
+
+.a-input, .a-textarea {
+    padding: 10px;
+    background-color: #f2f4f4;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .5)
+}
+
+.a-textarea {
+    height: 150px;
+    resize: none
+}
+
+.m-form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-left: 50px;
+    padding-bottom: 2vh
+}
+
+.m-form, .m-form__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.m-form__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.m-form label {
+    color: #ec004a;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 2vh;
+    font-size: 14px;
+    display: block !important;
+    color: #a5aaa5;
+    margin-bottom: 5px
+}
+
+.m-form__title {
+    font-size: 26px;
+    color: #000;
+    font-weight: 900;
+    padding-top: 0;
+    margin-top: 0
+}
+
+.m-form__fields {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.m-form__fields, .m-form__item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+}
+
+.m-form__item {
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.m-form__item:first-child {
+    padding-right: 10px
+}
+
+.m-form__item:last-child {
+    padding-left: 10px
+}
+
+.m-form__field {
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 14px
+}
+
+.m-form__button {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    background: #ec004a;
+    cursor: pointer;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    outline: none;
+    -ms-flex-item-align: end;
+    align-self: flex-end
+}
+
+.m-form__button:hover {
+    background: #ff0754
+}
+
+.m-form__button:focus {
+    background: #d30042
+}
+
+.content {
+    position: absolute;
+    width: 1000px;
+    max-height: 530px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 4px 7px 21px 0 rgba(0, 0, 0, .75)
+}
+
+.content__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%
+}
+
+.content__sidebar {
+    background-color: #ffd41e;
+    padding: 50px 100px 50px 80px;
+    width: 400px
+}
+
+.content__sidebar p {
+    padding-top: 60px;
+    color: #000;
+    font-style: italic
+}
+
+.content__icon {
+    height: 50px;
+    width: 50px
+}
+
+.content__form {
+    width: 100%;
+    padding: 50px 110px 50px 70px;
+    background-color: #fff
+}
+
+/*# sourceMappingURL=application.css.map */

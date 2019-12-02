@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="no-js" lang="uk-UA">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>HOME</title>
+  <meta name="description" content="home">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body data-page="main">
+<div class="main">
+  <div class="content">
+    <div class="content__container">
+      <div class="content__sidebar">
+        <%= image_tag("email.png", class: "content__icon") %>
+
+        <p>Please describe your product idea in a nutshell</p>
+        <p>We need your email to reach you back</p>
+      </div>
+      <div class="m-form content__form">
+        <h2 class="m-form__title">Hire Us</h2>
+        <%= form_for :post, html: {:class => "m-form__content"}, url: posts_path do |f| %>
+          <label for="description">Message</label>
+          <%= f.text_area :message, :class => "m-form__field a-textarea" %>
+          <div class="m-form__fields">
+            <div class="m-form__item">
+              <label for="name">Your Name</label>
+              <%= f.text_field :name, :class => "m-form__field a-input" %>
+            </div>
+            <div class="m-form__item">
+              <label for="Email">Your Email</label>
+              <%= f.text_field :email, :class => "m-form__field a-input" %>
+            </div>
+          </div>
+          <%= f.submit "Send", :class => "m-form__button", onclick: "alert('Thank you for you message');" %>
+          <!--          <button type="submit" class="m-form__button">Send</button>-->
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
