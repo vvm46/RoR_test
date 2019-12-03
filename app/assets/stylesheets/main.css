@@ -401,27 +401,39 @@ canvas {
     font-size: 14px
 }
 
+.m-form__buttons {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
 .m-form__button {
     width: 160px;
     height: 50px;
     font-size: 18px;
     font-weight: 900;
-    color: #fff;
     border: none;
     border-radius: 6px;
-    background: #ec004a;
     cursor: pointer;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     outline: none;
-    -ms-flex-item-align: end;
-    align-self: flex-end
+    background: transparent;
+    color: #ec004a
 }
 
-.m-form__button:hover {
+.m-form__button[type=submit] {
+    color: #fff;
+    background: #ec004a
+}
+
+.m-form__button[type=submit]:hover {
     background: #ff0754
 }
 
-.m-form__button:focus {
+.m-form__button[type=submit]:focus {
     background: #d30042
 }
 
@@ -469,4 +481,4 @@ canvas {
     background-color: #fff
 }
 
-/*# sourceMappingURL=application.css.map */
+/*# sourceMappingURL=main.css.map */
